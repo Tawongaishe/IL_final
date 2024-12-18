@@ -58,7 +58,7 @@ const CardStepper = ({
 
       {step === 1 && (
         <div>
-          <h2 className="text-2xl font-bold mb-4">As a {gender},</h2>
+          <h2 className="text-2xl font-bold mb-4">As a {gender} in {country}</h2>
           <p>The median yearly income for this group is {formatIncome(genderIncome)}.</p>
           <Bar key={`gender-chart-${step}`} data={getBarChartData("Gender Group", genderIncome)} />
           <div className="mt-4">
@@ -85,7 +85,7 @@ const CardStepper = ({
 
       {step === 2 && (
         <div>
-          <h2 className="text-2xl font-bold mb-4">At {age} years old,</h2>
+          <h2 className="text-2xl font-bold mb-4">At {age} years old in {country}</h2>
           <p>The median yearly income for this age group is {formatIncome(ageIncome)}.</p>
           <Bar key={`age-chart-${step}`} data={getBarChartData("Age Group", ageIncome)} />
           <div className="mt-4">
@@ -115,7 +115,7 @@ const CardStepper = ({
 
       {step === 3 && (
         <div>
-          <h2 className="text-2xl font-bold mb-4">With {education} education,</h2>
+          <h2 className="text-2xl font-bold mb-4">With {education} education in {country}</h2>
           <p>The median yearly income for this education level is {formatIncome(educationIncome)}.</p>
           <Bar key={`education-chart-${step}`} data={getBarChartData("Education Level", educationIncome)} />
           <div className="mt-4">
