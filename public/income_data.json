@@ -603,34 +603,8 @@
         }
       }
     },
-    "Romania": {
-      "baseIncome": 11118.0,
-      "multipliers": {
-        "age": {
-          "18-25": 115.7452105,
-          "25-35": 888.1192779,
-          "35-45": 1014.267097,
-          "45-55": 690.4179345,
-          "55+": 291.4430781
-        },
-        "gender": {
-          "male": 1.121964382,
-          "female": 0.7479762547
-        },
-        "education": {
-          "less than primary": 0.382029,
-          "primary": 0.402743,
-          "lower secondary": 0.517809,
-          "upper secondary": 1.110047,
-          "short-cycle tertiary": 2.116496,
-          "bachelor or equivalent": 2.31172,
-          "master or equivalent": 2.704632,
-          "doctorate or equivalent": 2.761675
-        }
-      }
-    },
     "Russia": {
-      "baseIncome": 8819.0,
+      "baseIncome": 24000,
       "multipliers": {
         "age": {
           "18-25": 0.0,
