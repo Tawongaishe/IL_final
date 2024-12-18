@@ -1,0 +1,867 @@
+{
+  "weights": {
+    "education": 0.33,
+    "age": 0.33,
+    "gender": 0.33
+  },
+  "countries": {
+    "Australia": {
+      "baseIncome": 26956.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.2394555202,
+          "25-35": 0.6427502271,
+          "35-45": 0.7567368104,
+          "45-55": 0.8307589922,
+          "55+": 0.6227808442
+        },
+        "gender": {
+          "male": 1.237683633,
+          "female": 0.8044591186
+        },
+        "education": {
+          "less than primary": 0.535832,
+          "primary": 0.536077,
+          "lower secondary": 0.569309,
+          "upper secondary": 0.861389,
+          "short-cycle tertiary": 1.18998,
+          "bachelor or equivalent": 1.604708,
+          "master or equivalent": 1.85644,
+          "doctorate or equivalent": null
+        }
+      }
+    },
+    "Austria": {
+      "baseIncome": 34357.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.7828248002,
+          "25-35": 1.812094445,
+          "35-45": 1.986055512,
+          "45-55": 1.951625717,
+          "55+": 0.8095530195
+        },
+        "gender": {
+          "male": 1.259132055,
+          "female": 0.7565270542
+        },
+        "education": {
+          "less than primary": null,
+          "primary": 0.377117,
+          "lower secondary": 0.546515,
+          "upper secondary": 1.026099,
+          "short-cycle tertiary": 1.433818,
+          "bachelor or equivalent": 0.885796,
+          "master or equivalent": 1.712696,
+          "doctorate or equivalent": 2.342603
+        }
+      }
+    },
+    "Belgium": {
+      "baseIncome": 30972.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.0628261406,
+          "25-35": 1.130259559,
+          "35-45": 1.416221144,
+          "45-55": 1.416459581,
+          "55+": 0.7919099607
+        },
+        "gender": {
+          "male": 1.176675707,
+          "female": 0.8517370528
+        },
+        "education": {
+          "less than primary": 0.581561,
+          "primary": 0.650439,
+          "lower secondary": 0.695654,
+          "upper secondary": 0.952451,
+          "short-cycle tertiary": 0.961217,
+          "bachelor or equivalent": 1.366092,
+          "master or equivalent": 1.762159,
+          "doctorate or equivalent": null
+        }
+      }
+    },
+    "Brazil": {
+      "baseIncome": 5844.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.1588096142,
+          "25-35": 0.8822756343,
+          "35-45": 0.9321036212,
+          "45-55": 0.9118318681,
+          "55+": 0.9118318681
+        },
+        "gender": {
+          "male": 1.17008898,
+          "female": 0.9351471595
+        },
+        "education": {
+          "less than primary": 0.911824,
+          "primary": 0.914699,
+          "lower secondary": 0.935216,
+          "upper secondary": 1.176369,
+          "short-cycle tertiary": 1.960609,
+          "bachelor or equivalent": 2.646834,
+          "master or equivalent": 3.921218,
+          "doctorate or equivalent": 9.557991
+        }
+      }
+    },
+    "Canada": {
+      "baseIncome": 29266.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.3420997419,
+          "25-35": 1.026299226,
+          "35-45": 1.26971635,
+          "45-55": 1.289452873,
+          "55+": 0.8157763076
+        },
+        "gender": {
+          "male": 1.213148363,
+          "female": 0.8091983872
+        },
+        "education": {
+          "less than primary": null,
+          "primary": null,
+          "lower secondary": null,
+          "upper secondary": 0.789462,
+          "short-cycle tertiary": 1.105245,
+          "bachelor or equivalent": 1.513135,
+          "master or equivalent": null,
+          "doctorate or equivalent": null
+        }
+      }
+    },
+    "China": {
+      "baseIncome": 9376.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.0,
+          "25-35": 1.003114353,
+          "35-45": 0.9876818241,
+          "45-55": 0.6224453162,
+          "55+": 0.0
+        },
+        "gender": {
+          "male": 1.121480375,
+          "female": 0.8334044369
+        },
+        "education": {
+          "less than primary": 0.735612,
+          "primary": 0.643025,
+          "lower secondary": 0.900235,
+          "upper secondary": 1.02884,
+          "short-cycle tertiary": 1.286039,
+          "bachelor or equivalent": 1.697579,
+          "master or equivalent": 2.695552,
+          "doctorate or equivalent": null
+        }
+      }
+    },
+    "Colombia": {
+      "baseIncome": 6856.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.0,
+          "25-35": 0.8588742277,
+          "35-45": 0.93044708,
+          "45-55": 0.7157285231,
+          "55+": 0.3578642616
+        },
+        "gender": {
+          "male": 1.016627771,
+          "female": 0.9543465578
+        },
+        "education": {
+          "less than primary": 0.715723,
+          "primary": 0.83502,
+          "lower secondary": 0.864834,
+          "upper secondary": 0.970756,
+          "short-cycle tertiary": 1.117328,
+          "bachelor or equivalent": 1.89946,
+          "master or equivalent": 3.876867,
+          "doctorate or equivalent": null
+        }
+      }
+    },
+    "Denmark": {
+      "baseIncome": 35875.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.008727087229,
+          "25-35": 0.04548557864,
+          "35-45": 0.07365661622,
+          "45-55": 0.109668069,
+          "55+": 0.07468990334
+        },
+        "gender": {
+          "male": 1.149379791,
+          "female": 0.8811986063
+        },
+        "education": {
+          "less than primary": null,
+          "primary": 0.616496,
+          "lower secondary": 0.671707,
+          "upper secondary": 1.020312,
+          "short-cycle tertiary": 1.350489,
+          "bachelor or equivalent": 1.320814,
+          "master or equivalent": 1.865918,
+          "doctorate or equivalent": 2.197762
+        }
+      }
+    },
+    "France": {
+      "baseIncome": 26907.0,
+      "multipliers": {
+        "age": {
+          "18-25": 3.228768402,
+          "25-35": 12.75588612,
+          "35-45": 17.82571048,
+          "45-55": 18.559117,
+          "55+": 10.2747926
+        },
+        "gender": {
+          "male": 1.140595384,
+          "female": 0.8696993347
+        },
+        "education": {
+          "less than primary": 0.59528,
+          "primary": 0.677694,
+          "lower secondary": 0.826525,
+          "upper secondary": 0.974375,
+          "short-cycle tertiary": 1.289951,
+          "bachelor or equivalent": 1.389921,
+          "master or equivalent": 1.880068,
+          "doctorate or equivalent": 2.147516
+        }
+      }
+    },
+    "Germany": {
+      "baseIncome": 30225.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.0006334051662,
+          "25-35": 0.4366794574,
+          "35-45": 0.6754955605,
+          "45-55": 0.708482308,
+          "55+": 0.5096427646
+        },
+        "gender": {
+          "male": 1.291645988,
+          "female": 0.7865674111
+        },
+        "education": {
+          "less than primary": null,
+          "primary": null,
+          "lower secondary": 0.49683,
+          "upper secondary": 0.910779,
+          "short-cycle tertiary": 1.574716,
+          "bachelor or equivalent": 1.337313,
+          "master or equivalent": 1.937476,
+          "doctorate or equivalent": 2.784086
+        }
+      }
+    },
+    "Georgia": {
+      "baseIncome": 2336.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.0,
+          "25-35": 10.09115435,
+          "35-45": 12.2274505,
+          "45-55": 12.34585559,
+          "55+": 9.259078045
+        },
+        "gender": {
+          "male": 1.527825342,
+          "female": 1.0
+        },
+        "education": {
+          "less than primary": 1.0,
+          "primary": 1.0,
+          "lower secondary": 1.0,
+          "upper secondary": 1.0,
+          "short-cycle tertiary": 1.944392,
+          "bachelor or equivalent": 2.54161,
+          "master or equivalent": 2.222175,
+          "doctorate or equivalent": 6.277654
+        }
+      }
+    },
+    "Ireland": {
+      "baseIncome": 23269.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.0,
+          "25-35": 0.03484382459,
+          "35-45": 0.06010559742,
+          "45-55": 0.05226573688,
+          "55+": 0.09407832639
+        },
+        "gender": {
+          "male": 1.197773862,
+          "female": 0.8146890713
+        },
+        "education": {
+          "less than primary": null,
+          "primary": 0.589295,
+          "lower secondary": 0.663337,
+          "upper secondary": 0.784202,
+          "short-cycle tertiary": 1.246972,
+          "bachelor or equivalent": 1.723026,
+          "master or equivalent": 2.235231,
+          "doctorate or equivalent": 2.789901
+        }
+      }
+    },
+    "Israel": {
+      "baseIncome": 22737.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.08708607179,
+          "25-35": 0.2468817736,
+          "35-45": 0.3321061479,
+          "45-55": 0.3174194232,
+          "55+": 0.1616573993
+        },
+        "gender": {
+          "male": 1.191494041,
+          "female": 0.8238553899
+        },
+        "education": {
+          "less than primary": 0.71005,
+          "primary": 0.709742,
+          "lower secondary": 0.780362,
+          "upper secondary": 0.785389,
+          "short-cycle tertiary": null,
+          "bachelor or equivalent": 1.134024,
+          "master or equivalent": 1.735352,
+          "doctorate or equivalent": null
+        }
+      }
+    },
+    "Japan": {
+      "baseIncome": 24141.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.00420435275,
+          "25-35": 0.02592041328,
+          "35-45": 0.03750274081,
+          "45-55": 0.03630915035,
+          "55+": 0.0
+        },
+        "gender": {
+          "male": 1.578600721,
+          "female": 0.4821672673
+        },
+        "education": {
+          "less than primary": null,
+          "primary": 0.771443,
+          "lower secondary": 0.541079,
+          "upper secondary": 0.857156,
+          "short-cycle tertiary": 0.753585,
+          "bachelor or equivalent": 1.500025,
+          "master or equivalent": 2.392896,
+          "doctorate or equivalent": null
+        }
+      }
+    },
+    "Lithuania": {
+      "baseIncome": 12572.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.0,
+          "25-35": 0.0,
+          "35-45": 288.9651774,
+          "45-55": 253.6472112,
+          "55+": 160.5362096
+        },
+        "gender": {
+          "male": 1.184059815,
+          "female": 0.8842666242
+        },
+        "education": {
+          "less than primary": 0.651384,
+          "primary": 0.629677,
+          "lower secondary": 0.633543,
+          "upper secondary": 0.859943,
+          "short-cycle tertiary": null,
+          "bachelor or equivalent": 1.622526,
+          "master or equivalent": 1.830528,
+          "doctorate or equivalent": 2.802633
+        }
+      }
+    },
+    "Luxembourg": {
+      "baseIncome": 47240.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.03636370422,
+          "25-35": 0.1733869803,
+          "35-45": 0.193518062,
+          "45-55": 0.1796602343,
+          "55+": 0.1081878272
+        },
+        "gender": {
+          "male": 1.196486029,
+          "female": 0.8138441998
+        },
+        "education": {
+          "less than primary": 0.653753,
+          "primary": 0.701365,
+          "lower secondary": 0.708954,
+          "upper secondary": 0.924492,
+          "short-cycle tertiary": 1.248552,
+          "bachelor or equivalent": 1.463499,
+          "master or equivalent": 1.672832,
+          "doctorate or equivalent": 1.756776
+        }
+      }
+    },
+    "Mali": {
+      "baseIncome": 1754.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.0,
+          "25-35": 0.1026103272,
+          "35-45": 0.1329484033,
+          "45-55": 0.1201417486,
+          "55+": 0.1163712673
+        },
+        "gender": {
+          "male": 1.566704675,
+          "female": 0.5832383124
+        },
+        "education": {
+          "less than primary": 0.710889,
+          "primary": 1.166534,
+          "lower secondary": 1.566477,
+          "upper secondary": 3.166249,
+          "short-cycle tertiary": 4.999316,
+          "bachelor or equivalent": 4.999316,
+          "master or equivalent": 6.665735,
+          "doctorate or equivalent": 10.53187
+        }
+      }
+    },
+    "Mexico": {
+      "baseIncome": 5154.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.2297188678,
+          "25-35": 4.020080187,
+          "35-45": 6.891566035,
+          "45-55": 8.040160374,
+          "55+": 3.445783017
+        },
+        "gender": {
+          "male": 1.188009313,
+          "female": 0.6854870004
+        },
+        "education": {
+          "less than primary": 0.449457,
+          "primary": 0.809003,
+          "lower secondary": 1.044975,
+          "upper secondary": 1.321769,
+          "short-cycle tertiary": 1.591793,
+          "bachelor or equivalent": 2.322158,
+          "master or equivalent": 3.787408,
+          "doctorate or equivalent": 5.648816
+        }
+      }
+    },
+    "Netherlands": {
+      "baseIncome": 31059.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.5099851417,
+          "25-35": 1.85945254,
+          "35-45": 1.94024068,
+          "45-55": 1.695237619,
+          "55+": 0.6620861046
+        },
+        "gender": {
+          "male": 1.350816189,
+          "female": 0.7439389549
+        },
+        "education": {
+          "less than primary": 0.563534,
+          "primary": 0.638156,
+          "lower secondary": 0.623011,
+          "upper secondary": 0.939753,
+          "short-cycle tertiary": 1.424363,
+          "bachelor or equivalent": 1.391774,
+          "master or equivalent": 1.976326,
+          "doctorate or equivalent": null
+        }
+      }
+    },
+    "Norway": {
+      "baseIncome": 39837.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.0108447804,
+          "25-35": 0.07149674106,
+          "35-45": 0.08589037069,
+          "45-55": 0.08816037711,
+          "55+": 0.0581063624
+        },
+        "gender": {
+          "male": 1.140648141,
+          "female": 0.8740618018
+        },
+        "education": {
+          "less than primary": null,
+          "primary": null,
+          "lower secondary": null,
+          "upper secondary": 0.999495,
+          "short-cycle tertiary": null,
+          "bachelor or equivalent": 1.231217,
+          "master or equivalent": 1.637889,
+          "doctorate or equivalent": null
+        }
+      }
+    },
+    "Paraguay": {
+      "baseIncome": 8446.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.005335036389,
+          "25-35": 0.01976039192,
+          "35-45": 0.02389152459,
+          "45-55": 0.02532682097,
+          "55+": 0.01798961349
+        },
+        "gender": {
+          "male": 1.111176888,
+          "female": 0.7570447549
+        },
+        "education": {
+          "less than primary": 0.426214,
+          "primary": 0.733377,
+          "lower secondary": 0.962136,
+          "upper secondary": 1.174674,
+          "short-cycle tertiary": 2.025551,
+          "bachelor or equivalent": 2.096164,
+          "master or equivalent": 3.159957,
+          "doctorate or equivalent": 6.460419
+        }
+      }
+    },
+    "Peru": {
+      "baseIncome": 5108.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.0,
+          "25-35": 0.739732112,
+          "35-45": 0.806261478,
+          "45-55": 0.7169870296,
+          "55+": 0.2481281717
+        },
+        "gender": {
+          "male": 1.180305403,
+          "female": 0.749412686
+        },
+        "education": {
+          "less than primary": 0.39908,
+          "primary": 0.648865,
+          "lower secondary": 0.863998,
+          "upper secondary": 1.218305,
+          "short-cycle tertiary": null,
+          "bachelor or equivalent": 2.068559,
+          "master or equivalent": 3.808144,
+          "doctorate or equivalent": null
+        }
+      }
+    },
+    "Poland": {
+      "baseIncome": 12470.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.0,
+          "25-35": 0.9999784757,
+          "35-45": 1.076899897,
+          "45-55": 1.025618949,
+          "55+": 0.7974187332
+        },
+        "gender": {
+          "male": 1.153809142,
+          "female": 0.8563753007
+        },
+        "education": {
+          "less than primary": 0.513272,
+          "primary": 0.623769,
+          "lower secondary": 0.460593,
+          "upper secondary": 0.969206,
+          "short-cycle tertiary": 0.897418,
+          "bachelor or equivalent": 1.302534,
+          "master or equivalent": 1.474723,
+          "doctorate or equivalent": 1.86648
+        }
+      }
+    },
+    "Romania": {
+      "baseIncome": 11118.0,
+      "multipliers": {
+        "age": {
+          "18-25": 115.7452105,
+          "25-35": 888.1192779,
+          "35-45": 1014.267097,
+          "45-55": 690.4179345,
+          "55+": 291.4430781
+        },
+        "gender": {
+          "male": 1.121964382,
+          "female": 0.7479762547
+        },
+        "education": {
+          "less than primary": 0.382029,
+          "primary": 0.402743,
+          "lower secondary": 0.517809,
+          "upper secondary": 1.110047,
+          "short-cycle tertiary": 2.116496,
+          "bachelor or equivalent": 2.31172,
+          "master or equivalent": 2.704632,
+          "doctorate or equivalent": 2.761675
+        }
+      }
+    },
+    "Russia": {
+      "baseIncome": 8819.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.0,
+          "25-35": 0.1257630701,
+          "35-45": 0.146167521,
+          "45-55": 0.1297701551,
+          "55+": 0.0581633309
+        },
+        "gender": {
+          "male": 1.177004195,
+          "female": 0.9074725026
+        },
+        "education": {
+          "less than primary": 0.842182,
+          "primary": null,
+          "lower secondary": 0.705329,
+          "upper secondary": 0.794807,
+          "short-cycle tertiary": 0.994829,
+          "bachelor or equivalent": 1.694047,
+          "master or equivalent": 1.512541,
+          "doctorate or equivalent": 1.573047
+        }
+      }
+    },
+    "Serbia": {
+      "baseIncome": 7356.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.0,
+          "25-35": 0.8333547807,
+          "35-45": 0.942524257,
+          "45-55": 0.866688972,
+          "55+": 0.7300187879
+        },
+        "gender": {
+          "male": 1.100054377,
+          "female": 0.9000815661
+        },
+        "education": {
+          "less than primary": 0.433347,
+          "primary": 0.476686,
+          "lower secondary": 0.733347,
+          "upper secondary": 1.000027,
+          "short-cycle tertiary": 1.232368,
+          "bachelor or equivalent": 1.666707,
+          "master or equivalent": 1.833374,
+          "doctorate or equivalent": 2.26131
+        }
+      }
+    },
+    "Slovakia": {
+      "baseIncome": 12312.0,
+      "multipliers": {
+        "age": {
+          "18-25": 5.256387772,
+          "25-35": 39.42290829,
+          "35-45": 41.08455891,
+          "45-55": 37.38632874,
+          "55+": 23.97070516
+        },
+        "gender": {
+          "male": 1.214912281,
+          "female": 0.8763807667
+        },
+        "education": {
+          "less than primary": 0.520703,
+          "primary": 0.592048,
+          "lower secondary": 0.653923,
+          "upper secondary": 0.996126,
+          "short-cycle tertiary": 1.270996,
+          "bachelor or equivalent": 1.261533,
+          "master or equivalent": 1.490188,
+          "doctorate or equivalent": 1.550634
+        }
+      }
+    },
+    "Spain": {
+      "baseIncome": 21353.0,
+      "multipliers": {
+        "age": {
+          "18-25": 4.836015871,
+          "25-35": 19.90775569,
+          "35-45": 24.9678711,
+          "45-55": 27.59373374,
+          "55+": 18.33958617
+        },
+        "gender": {
+          "male": 1.204280429,
+          "female": 0.7870088512
+        },
+        "education": {
+          "less than primary": 0.630623,
+          "primary": 0.779118,
+          "lower secondary": 0.890587,
+          "upper secondary": 1.031017,
+          "short-cycle tertiary": 1.179923,
+          "bachelor or equivalent": 1.63215,
+          "master or equivalent": 1.907629,
+          "doctorate or equivalent": 2.799377
+        }
+      }
+    },
+    "Sweden": {
+      "baseIncome": 32471.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.0,
+          "25-35": 0.0308490146,
+          "35-45": 0.03240120713,
+          "45-55": 0.03180371042,
+          "55+": 0.01909391641
+        },
+        "gender": {
+          "male": 1.140217425,
+          "female": 0.8797696406
+        },
+        "education": {
+          "less than primary": null,
+          "primary": 0.57932,
+          "lower secondary": 0.548594,
+          "upper secondary": 1.013403,
+          "short-cycle tertiary": 1.088097,
+          "bachelor or equivalent": 1.230273,
+          "master or equivalent": 1.508032,
+          "doctorate or equivalent": 1.831684
+        }
+      }
+    },
+    "Taiwan": {
+      "baseIncome": 323176.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.0,
+          "25-35": 0.07941273592,
+          "35-45": 0.0874342244,
+          "45-55": 0.08422562901,
+          "55+": 0.0
+        },
+        "gender": {
+          "male": 1.123873679,
+          "female": 0.8578823923
+        },
+        "education": {
+          "less than primary": 0.139993,
+          "primary": 0.378378,
+          "lower secondary": 0.815315,
+          "upper secondary": 0.936937,
+          "short-cycle tertiary": 1.189189,
+          "bachelor or equivalent": 1.114865,
+          "master or equivalent": 1.918706,
+          "doctorate or equivalent": 3.007573
+        }
+      }
+    },
+    "United Kingdom": {
+      "baseIncome": 22401.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.3476458141,
+          "25-35": 1.059995274,
+          "35-45": 1.215401748,
+          "45-55": 1.158131711,
+          "55+": 0.7595870141
+        },
+        "gender": {
+          "male": 1.266952368,
+          "female": 0.7854560064
+        },
+        "education": {
+          "less than primary": null,
+          "primary": null,
+          "lower secondary": 0.796397,
+          "upper secondary": 0.985487,
+          "short-cycle tertiary": 1.095469,
+          "bachelor or equivalent": 1.420932,
+          "master or equivalent": 1.74502,
+          "doctorate or equivalent": 2.219673
+        }
+      }
+    },
+    "United States": {
+      "baseIncome": 34000.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.2647058824,
+          "25-35": 0.9411764706,
+          "35-45": 1.176470588,
+          "45-55": 1.176470588,
+          "55+": 0.7352941176
+        },
+        "gender": {
+          "male": 1.205882353,
+          "female": 0.7976470588
+        },
+        "education": {
+          "less than primary": 0.453529,
+          "primary": 0.529412,
+          "lower secondary": 0.406588,
+          "upper secondary": 0.798471,
+          "short-cycle tertiary": 1.058824,
+          "bachelor or equivalent": 1.470588,
+          "master or equivalent": 1.946426,
+          "doctorate or equivalent": 2.647059
+        }
+      }
+    },
+    "Uruguay": {
+      "baseIncome": 10322.0,
+      "multipliers": {
+        "age": {
+          "18-25": 0.1403255709,
+          "25-35": 0.9198107299,
+          "35-45": 1.066474339,
+          "45-55": 1.075829377,
+          "55+": 0.8555182308
+        },
+        "gender": {
+          "male": 1.169347026,
+          "female": 0.8886843635
+        },
+        "education": {
+          "less than primary": 0.631467,
+          "primary": 0.795175,
+          "lower secondary": 0.982281,
+          "upper secondary": 1.266528,
+          "short-cycle tertiary": 1.810202,
+          "bachelor or equivalent": 2.338762,
+          "master or equivalent": 3.650262,
+          "doctorate or equivalent": null
+        }
+      }
+    }
+  }
+}
