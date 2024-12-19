@@ -1,19 +1,8 @@
 const IncomeEstimate = ({ baseIncome, educationIncome, gender, age, country }) => {
-  const formatIncome = (value) => {
-    if (!value || value === 0) {
-      return {
-        value: "N/A",
-        hasData: false
-      };
-    }
-    return {
-      value: `$${value.toLocaleString()}`,
-      hasData: true
-    };
-  };
+  const willShowNA = !educationIncome || educationIncome === 0;
 
   const calculateIncome = () => {
-    if (!educationIncome) return { value: "N/A", hasData: false };
+    if (willShowNA) return { value: "N/A", hasData: false };
     const genderFactor = gender === 'male' ? 1.15 : 0.85;
     const ageFactor = age === '18-25' ? 0.8 :
                      age === '25-35' ? 1.1 :
@@ -44,6 +33,9 @@ const IncomeEstimate = ({ baseIncome, educationIncome, gender, age, country }) =
               })`}:
             </p>
             <p className="text-4xl font-bold text-teal-600">{income.value}</p>
+            <p className="text-sm text-gray-600">
+              Note: these are demonstrative estimates and may not reflect actual income levels in {country}.
+            </p>
           </>
         ) : (
           <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4">
@@ -52,7 +44,13 @@ const IncomeEstimate = ({ baseIncome, educationIncome, gender, age, country }) =
             </p>
           </div>
         )}
-        <p className="text-sm text-gray-500 mt-2">*This is an estimated calculation based on available data and adjustments</p>
+        {willShowNA && (
+          <div className="mt-4 p-4 bg-gray-50 rounded border border-gray-200">
+            <p className="text-sm text-gray-600">
+              Note: Some combinations of education, age, and gender may show as N/A due to insufficient or unavailable data for certain demographic groups in {country}.
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );
