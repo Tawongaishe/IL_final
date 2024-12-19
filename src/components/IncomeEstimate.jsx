@@ -23,7 +23,7 @@ const IncomeEstimate = ({ baseIncome, educationIncome, gender, age, country }) =
         {income.hasData ? (
           <>
             <p className="text-lg mb-4">
-              Based on your profile in {country}, taking into account your education level
+              Based on your profile in {country}, taking into account your education level and gender
               {gender && ` (${gender === 'male' ? '+15% for male' : '-15% for female'})`}
               {age && `, and age group ${age} (${
                 age === '18-25' ? '-20%' :
