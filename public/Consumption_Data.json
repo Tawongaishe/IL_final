@@ -1,0 +1,167 @@
+ {
+    "Australia": {
+        "minimum_food_cost": 323,
+        "rent_1bd_city_centre": 1384.69,
+        "rent_3bd_city_centre": 2270.13
+    },
+    "Austria": {
+        "minimum_food_cost": 399,
+        "rent_1bd_city_centre": 902.81,
+        "rent_3bd_city_centre": 1716.73
+    },
+    "Belgium": {
+        "minimum_food_cost": 326,
+        "rent_1bd_city_centre": 873.25,
+        "rent_3bd_city_centre": 1309.48
+    },
+    "Brazil": {
+        "minimum_food_cost": 154,
+        "rent_1bd_city_centre": 297.35,
+        "rent_3bd_city_centre": 576.58
+    },
+    "Canada": {
+        "minimum_food_cost": 367,
+        "rent_1bd_city_centre": 1296.86,
+        "rent_3bd_city_centre": 2101.89
+    },
+    "China": {
+        "minimum_food_cost": 125,
+        "rent_1bd_city_centre": 505.93,
+        "rent_3bd_city_centre": 1064.73
+    },
+    "Colombia": {
+        "minimum_food_cost": 168,
+        "rent_1bd_city_centre": 326.37,
+        "rent_3bd_city_centre": 610.34
+    },
+    "Denmark": {
+        "minimum_food_cost": 371,
+        "rent_1bd_city_centre": 1161.32,
+        "rent_3bd_city_centre": 1983.89
+    },
+    "France": {
+        "minimum_food_cost": 382,
+        "rent_1bd_city_centre": 805.86,
+        "rent_3bd_city_centre": 1485.83
+    },
+    "Germany": {
+        "minimum_food_cost": 351,
+        "rent_1bd_city_centre": 892.99,
+        "rent_3bd_city_centre": 1674.76
+    },
+    "Georgia": {
+        "minimum_food_cost": 196,
+        "rent_1bd_city_centre": 585.41,
+        "rent_3bd_city_centre": 1033.33
+    },
+    "Ireland": {
+        "minimum_food_cost": 296,
+        "rent_1bd_city_centre": 1660.29,
+        "rent_3bd_city_centre": 2819.89
+    },
+    "Israel": {
+        "minimum_food_cost": 357,
+        "rent_1bd_city_centre": 1174.91,
+        "rent_3bd_city_centre": 1955.05
+    },
+    "Japan": {
+        "minimum_food_cost": 266,
+        "rent_1bd_city_centre": 562.32,
+        "rent_3bd_city_centre": 1258.11
+    },
+    "Lithuania": {
+        "minimum_food_cost": 242,
+        "rent_1bd_city_centre": 651.56,
+        "rent_3bd_city_centre": 1149.90
+    },
+    "Luxembourg": {
+        "minimum_food_cost": 416,
+        "rent_1bd_city_centre": 1764.09,
+        "rent_3bd_city_centre": 3026.34
+    },
+    "Mali": {
+        "minimum_food_cost": 0,
+        "rent_1bd_city_centre": 0,
+        "rent_3bd_city_centre": 311.05
+    },
+    "Mexico": {
+        "minimum_food_cost": 234,
+        "rent_1bd_city_centre": 608.36,
+        "rent_3bd_city_centre": 1149.10
+    },
+    "Netherlands": {
+        "minimum_food_cost": 337,
+        "rent_1bd_city_centre": 1465.73,
+        "rent_3bd_city_centre": 2303.72
+    },
+    "Norway": {
+        "minimum_food_cost": 418,
+        "rent_1bd_city_centre": 1156.92,
+        "rent_3bd_city_centre": 1771.52
+    },
+    "Paraguay": {
+        "minimum_food_cost": 141,
+        "rent_1bd_city_centre": 390.99,
+        "rent_3bd_city_centre": 661.84
+    },
+    "Peru": {
+        "minimum_food_cost": 185,
+        "rent_1bd_city_centre": 439.94,
+        "rent_3bd_city_centre": 749.71
+    },
+    "Poland": {
+        "minimum_food_cost": 214,
+        "rent_1bd_city_centre": 738.92,
+        "rent_3bd_city_centre": 1193.49
+    },
+    "Romania": {
+        "minimum_food_cost": 203,
+        "rent_1bd_city_centre": 436.74,
+        "rent_3bd_city_centre": 731.88
+    },
+    "Russia": {
+        "minimum_food_cost": 148,
+        "rent_1bd_city_centre": 368.13,
+        "rent_3bd_city_centre": 715.51
+    },
+    "Serbia": {
+        "minimum_food_cost": 211,
+        "rent_1bd_city_centre": 523.79,
+        "rent_3bd_city_centre": 961.79
+    },
+    "Slovakia": {
+        "minimum_food_cost": 269,
+        "rent_1bd_city_centre": 634.71,
+        "rent_3bd_city_centre": 1021.27
+    },
+    "Spain": {
+        "minimum_food_cost": 268,
+        "rent_1bd_city_centre": 1004.76,
+        "rent_3bd_city_centre": 1575.91
+    },
+    "Sweden": {
+        "minimum_food_cost": 342,
+        "rent_1bd_city_centre": 902.15,
+        "rent_3bd_city_centre": 1404.42
+    },
+    "Taiwan": {
+        "minimum_food_cost": 264,
+        "rent_1bd_city_centre": 463.62,
+        "rent_3bd_city_centre": 1124.08
+    },
+    "United Kingdom": {
+        "minimum_food_cost": 285,
+        "rent_1bd_city_centre": 1342.90,
+        "rent_3bd_city_centre": 2193.25
+    },
+    "United States": {
+        "minimum_food_cost": 421,
+        "rent_1bd_city_centre": 1755.70,
+        "rent_3bd_city_centre": 2944.56
+    },
+    "Uruguay": {
+        "minimum_food_cost": 272,
+        "rent_1bd_city_centre": 533.64,
+        "rent_3bd_city_centre": 901.77
+    }
+}

@@ -36,6 +36,7 @@ const WorldIncomeChart = ({ countryIncome = 21353 }) => {
   return (
     <div className="bg-white p-4 rounded-lg mt-4">
       <h3 className="text-lg font-semibold mb-2 text-center">Global Income Distribution</h3>
+      <h3 className="text-sm text-gray-600 text-center mb-4">Let’s see how your income compares to the rest of the world. </h3>
       <p className="text-center text-sm mb-4">
         Your income is in the top <span className="font-bold">{Math.round(100 - percentile)}%</span> globally
       </p>

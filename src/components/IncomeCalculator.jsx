@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import CardStepper from "./CardStepper";
 import GenerateNewButton from "./GenerateNewButton";
 import IncomeEstimate from "./IncomeEstimate";
+import LivingCostsEstimate from "./LivingCostsEstimates";
 
 const IncomeCalculator = () => {
   const [data, setData] = useState(null);
@@ -85,7 +86,7 @@ const IncomeCalculator = () => {
   if (loading) {
     return (
       <div className="flex items-center justify-center h-screen bg-gradient-to-r from-green-400 via-teal-400 to-cyan-500">
-        <p className="text-white text-2xl animate-pulse">Loading...</p>
+        <p className="text-white text-2xl animate-pulse">Loading your destiny...</p>
       </div>
     );
   }
@@ -93,23 +94,64 @@ const IncomeCalculator = () => {
   if (!selectedCountry) {
     return (
       <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-r from-green-100 to-teal-100">
-        <h1 className="text-4xl font-bold text-teal-700 mb-8">Global Income Explorer</h1>
-        <button
-          onClick={handleRandomSelection}
-          className="bg-teal-500 text-white px-8 py-4 rounded-lg text-xl font-bold shadow-lg hover:bg-teal-600 transition-all transform hover:scale-105 flex items-center gap-2"
-        >
-          <span>🎲</span>
-          Generate Random Profile
-        </button>
+        <div className="w-full bg-emerald-600 p-4 fixed top-0 left-0 shadow-md">
+          <div className="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 className="text-white text-xl font-bold">The Lottery of Life</h1>
+            <nav className="flex gap-6">
+              <a href="#calculator" className="text-white hover:text-emerald-200">Calculator</a>
+              <a href="#about" className="text-white hover:text-emerald-200">About Us</a>
+              <a href="#methodology" className="text-white hover:text-emerald-200">Methodology</a>
+            </nav>
+          </div>
+        </div>
+        
+        <div className="text-center space-y-8 max-w-3xl px-4">
+          <h1 className="text-5xl font-bold text-emerald-800 mb-6">The Lottery of Life</h1>
+          
+          <h2 className="text-2xl font-semibold text-emerald-700">
+            Every birth is a roll of the dice
+          </h2>
+          
+          <div className="space-y-4">
+            <h3 className="text-xl text-emerald-600">
+              Your birthplace, gender, and circumstances shape your economic destiny
+            </h3>
+            
+            <p className="text-lg text-emerald-600 leading-relaxed">
+              Click below to experience a random life path and discover how different circumstances 
+              affect global income inequality.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-12">
+          <button
+            onClick={handleRandomSelection}
+            className="bg-emerald-500 text-white px-8 py-4 rounded-lg text-xl font-bold shadow-lg hover:bg-emerald-600 transition-all transform hover:scale-105 flex items-center gap-2"
+          >
+            <span>🎲</span>
+            Roll the Dice of Destiny
+          </button>
+        </div>
       </div>
     );
   }
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-green-100 to-teal-100 p-6 relative">
+      <div className="w-full bg-emerald-600 p-4 fixed top-0 left-0 shadow-md">
+        <div className="max-w-7xl mx-auto flex justify-between items-center">
+          <h1 className="text-white text-xl font-bold">The Lottery of Life</h1>
+          <nav className="flex gap-6">
+            <a href="#calculator" className="text-white hover:text-emerald-200">Calculator</a>
+            <a href="#about" className="text-white hover:text-emerald-200">About Us</a>
+            <a href="#methodology" className="text-white hover:text-emerald-200">Methodology</a>
+          </nav>
+        </div>
+      </div>
       <GenerateNewButton profile={profile} onGenerateNew={handleRandomSelection} />
-      <div className="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-xl mt-6">
-        <h1 className="text-3xl font-bold text-center text-teal-700 mb-6">Global Income Explorer</h1>
+    
+      <div className="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-xl mt-16">
         <CardStepper
           baseIncome={baseIncome}
           genderIncome={genderIncome}
