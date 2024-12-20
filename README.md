@@ -108,7 +108,7 @@ Feel free to check [issues page](https://github.com/Tawongaishe/IL_final/issues)
 
 ## License
 
-[Specify your license here, e.g., MIT]
+[Minerva University]
 
 ## Contact
 
