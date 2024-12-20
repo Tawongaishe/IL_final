@@ -40,6 +40,29 @@ const LivingCostsEstimate = ({ country, totalIncome }) => {
   const yearlyRemaining = yearlyIncome - yearlyTotalCosts;
   const percentageUsed = ((yearlyTotalCosts / yearlyIncome) * 100).toFixed(1);
 
+  // Function to get conditional paragraph based on percentage used
+  const getSpendingInsight = (percentageUsed) => {
+    const parsedPercentage = parseFloat(percentageUsed);
+    
+    if (parsedPercentage > 100) {
+      return " It seems like urban life in your country may be unaffordable. You might need to cut food costs (perhaps sacrificing balance) or move to a more remote area with cheaper rent. And that's without including healthcare or leisure—both essential! Can you imagine what life would be like?";
+    }
+    
+    if (parsedPercentage > 50) {
+      return " Over half your income is spent on necessities, excluding healthcare, insurance, and other essential expenses. With so much directed toward survival, you might struggle to save or enjoy life. What would happen if you lost your job?";
+    }
+    
+    if (parsedPercentage >= 30 && parsedPercentage <= 50) {
+      return " Your income leaves some room to live in an urban center and eat well. But how much do other essentials like healthcare, insurance, and transport cost in your country? After all expenses, would you still be able to save?";
+    }
+    
+    if (parsedPercentage < 30) {
+      return " After covering rent and food, you still have plenty left for essentials and luxuries. You're among the fortunate few who can live comfortably, with extra money for savings or indulgences. What would you do with this freedom?";
+    }
+    
+    return ""; // Fallback for unexpected scenarios
+  };
+
   return (
     <div className="bg-white rounded-lg shadow-lg mt-6 p-6">
       {/* Updated Header Section */}
@@ -48,6 +71,16 @@ const LivingCostsEstimate = ({ country, totalIncome }) => {
           <Users className="h-6 w-6" />
           Living Costs Estimate
         </h2>
+        <div className="bg-emerald-50 p-4 rounded-lg">
+            <p className="text-emerald-700 text-lg leading-relaxed">
+            Just like the lottery of life determined where you were born, 
+            it also decided your household size — the number of people you live with and are financially responsible for.
+            </p>
+        </div>
+        
+  <h2 className="text-2xl font-bold text-emerald-800 mb-4">
+    You live in a:
+  </h2>
         <div className={`flex items-center gap-2 p-3 rounded-lg ${hasFamily ? 'bg-blue-50 border border-blue-200' : 'bg-gray-50 border border-gray-200'}`}>
           <Users className={`h-5 w-5 ${hasFamily ? 'text-blue-500' : 'text-gray-500'}`} />
           <div>
@@ -61,12 +94,10 @@ const LivingCostsEstimate = ({ country, totalIncome }) => {
             </p>
           </div>
         </div>
+        <div className="border-t border-gray-200 my-8"></div>
       </div>
 
       <div className="space-y-6">
-        <p className="text-sm text-gray-500">
-          These estimates are based on living in urban city center and consuming 2500 calories per day per person
-        </p>
         
         {/* Monthly Costs Section */}
         <div className="border-b pb-6">
@@ -75,6 +106,11 @@ const LivingCostsEstimate = ({ country, totalIncome }) => {
             Monthly Breakdown
           </h3>
           <div className="space-y-4">
+            <p className = "text-gray-600">A balanced 2,400 calorie per day diet including bread, milk, meat, fruits, vegetables,
+                 and other essentials — for your family costs an average of ${monthlyFoodCost.toFixed(2)} in your country.</p>
+            <p className = "text-gray-600">Rent in an urban center averages around ${monthlyRentCost.toFixed(2)}. 
+                Based on your income, could you afford a stunning city apartment with skyline views, 
+                or would you need to downsize—or even move out of the city?</p>
             <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
               <div className="flex items-center gap-2">
                 <Utensils className="h-5 w-5 text-orange-500" />
@@ -118,18 +154,47 @@ const LivingCostsEstimate = ({ country, totalIncome }) => {
               <span className="font-semibold">${yearlyTotalCosts.toFixed(2)}</span>
             </div>
 
-            <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+            <div className={`flex items-center justify-between p-3 rounded-lg 
+              ${yearlyRemaining < 0 ? 'bg-red-100 border border-red-300' : 
+                yearlyRemaining / yearlyIncome < 0.3 ? 'bg-yellow-100 border border-yellow-300' : 
+                yearlyRemaining / yearlyIncome >= 0.5 ? 'bg-green-100 border border-green-300' : 
+                'bg-gray-50'}`}>
               <span>Yearly Remaining for Other Expenses</span>
-              <span className={`font-semibold ${yearlyRemaining < 0 ? 'text-red-500' : 'text-green-500'}`}>
+              <span className={`font-semibold ${
+                yearlyRemaining < 0 ? 'text-red-700' : 
+                yearlyRemaining / yearlyIncome < 0.3 ? 'text-yellow-700' : 
+                yearlyRemaining / yearlyIncome >= 0.5 ? 'text-green-700' : 
+                'text-gray-700'}`}>
                 ${yearlyRemaining.toFixed(2)}
               </span>
             </div>
 
-            <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+            <div className={`flex items-center justify-between p-3 rounded-lg 
+              ${parseInt(percentageUsed) > 100 ? 'bg-red-100 border border-red-300' : 
+                parseInt(percentageUsed) > 50 ? 'bg-yellow-100 border border-yellow-300' : 
+                'bg-gray-50'}`}>
               <span>Percentage of Income Used for Essentials</span>
-              <span className={`font-semibold ${parseInt(percentageUsed) > 100 ? 'text-red-500' : 'text-amber-500'}`}>
+              <span className={`font-semibold ${
+                parseInt(percentageUsed) > 100 ? 'text-red-700' : 
+                parseInt(percentageUsed) > 50 ? 'text-yellow-700' : 
+                'text-amber-500'}`}>
                 {percentageUsed}%
               </span>
+            </div>
+
+            {/* New Spending Insight Section */}
+            <div className={`mt-4 p-4 rounded-lg border 
+              ${parseInt(percentageUsed) > 100 ? 'bg-red-50 border-red-200 text-red-700' : 
+                parseInt(percentageUsed) > 50 ? 'bg-yellow-50 border-yellow-200 text-yellow-700' : 
+                'bg-emerald-50 border-emerald-200 text-emerald-700'}`}>
+              <h3 className="font-semibold mb-2 flex items-center gap-2">
+                <Wallet className="h-5 w-5" />
+                Your Financial Insight
+              </h3>
+              <p>
+                You used {percentageUsed}% of your income for these two essentials: food and shelter. 
+                {getSpendingInsight(percentageUsed)}
+              </p>
             </div>
           </div>
         </div>

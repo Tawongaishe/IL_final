@@ -4,12 +4,9 @@ import { Link } from "react-router-dom";
 const Authors = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-6">
-      <header className="bg-green-500 text-white py-4 text-center">
-        <h1 className="text-3xl font-bold">About Us</h1>
-      </header>
       <div className="container mx-auto max-w-4xl bg-white p-6 shadow-md rounded-lg">
         <p className="mb-6">
-          Welcome to <strong>[Webapp Name]</strong>! We are a team of senior students at Minerva
+          Welcome to <strong>The Lottery of Life</strong>! We are a team of senior students at Minerva
           University, passionate about tackling complex global challenges through data-driven
           insights. This webapp was created as part of a class on Quantitative Analysis of Income,
           Inequality, and Intergenerational Mobility.
@@ -20,12 +17,50 @@ const Authors = () => {
         </p>
         <h2 className="text-2xl font-bold mb-4 text-green-600">Meet the Team</h2>
 
+        <div className="grid md:grid-cols-3 gap-6 mb-8">
+          {/* Team Member 1 */}
+          <div className="text-center">
+            <div className="w-48 h-48 mx-auto mb-4 bg-gray-200 rounded-full overflow-hidden">
+              <img 
+                src="/images/Tawonga_pic.jpeg" 
+                alt="Tawongaishe Nhawu" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="text-xl font-semibold text-green-600">Tawongaishe Nhawu</h3>
+          </div>
+
+          {/* Team Member 2 */}
+          <div className="text-center">
+            <div className="w-48 h-48 mx-auto mb-4 bg-gray-200 rounded-full overflow-hidden">
+              <img 
+                src="/images/Maju.jpeg" 
+                alt="Maria Julia" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="text-xl font-semibold text-green-600">Maria Julia Castro</h3>
+          </div>
+
+          {/* Team Member 3 */}
+          <div className="text-center">
+            <div className="w-48 h-48 mx-auto mb-4 bg-gray-200 rounded-full overflow-hidden">
+              <img 
+                src="/images/Emma.jpeg" 
+                alt="Emma Stoks" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="text-xl font-semibold text-green-600">Emma Stoks</h3>
+          </div>
+        </div>
+
         <div className="team-member mb-6">
           <h3 className="text-xl font-semibold text-green-600">Tawongaishe Nhawu</h3>
           <p>
             Tawongaishe, from South Africa, is a Computer Science student specializing in product
             management. As an incoming Associate Product Manager (APM) at LinkedIn, she is already
-            making waves in the tech world. Beyond her tech skills, she’s a talented poet who brings
+            making waves in the tech world. Beyond her tech skills, she's a talented poet who brings
             creativity to everything she does.
           </p>
           <a
@@ -36,6 +71,12 @@ const Authors = () => {
           >
             LinkedIn Profile
           </a>
+          <div className="mt-4 bg-gray-50 p-3 rounded-lg">
+            <h4 className="font-bold mb-2 text-green-700">Technical Lead & Full-Stack Developer</h4>
+            <p className="text-gray-700">
+              Spearheaded the technical architecture of the Lottery of Life application, transforming complex data into an interactive web experience. Drove the project's technical implementation from conception to deployment, ensuring robust performance and user-friendly design.
+            </p>
+          </div>
         </div>
 
         <div className="team-member mb-6">
@@ -55,6 +96,12 @@ const Authors = () => {
           >
             LinkedIn Profile
           </a>
+          <div className="mt-4 bg-gray-50 p-3 rounded-lg">
+            <h4 className="font-bold mb-2 text-green-700">Data Strategy & Income Analytics Specialist</h4>
+            <p className="text-gray-700">
+              Pioneered the comprehensive income data research, meticulously mapping global income variations across demographics. Her deep analytical approach transformed raw statistical data into meaningful insights that power the Lottery of Life's core narrative.
+            </p>
+          </div>
         </div>
 
         <div className="team-member">
@@ -74,6 +121,12 @@ const Authors = () => {
           >
             LinkedIn Profile
           </a>
+          <div className="mt-4 bg-gray-50 p-3 rounded-lg">
+            <h4 className="font-bold mb-2 text-green-700">Product, User Experience & Research Director</h4>
+            <p className="text-gray-700">
+              Crafted the narrative and user experience that transforms complex economic data into an engaging, accessible story. Her expertise in design and communication ensured that the Lottery of Life not only informs but deeply resonates with users.
+            </p>
+          </div>
         </div>
 
         <p className="mt-6">

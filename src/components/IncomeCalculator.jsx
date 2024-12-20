@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import CardStepper from "./CardStepper";
 import GenerateNewButton from "./GenerateNewButton";
 import IncomeEstimate from "./IncomeEstimate";
-import LivingCostsEstimate from "./LivingCostsEstimates";
 
 const IncomeCalculator = () => {
   const [data, setData] = useState(null);
@@ -98,9 +97,9 @@ const IncomeCalculator = () => {
           <div className="max-w-7xl mx-auto flex justify-between items-center">
             <h1 className="text-white text-xl font-bold">The Lottery of Life</h1>
             <nav className="flex gap-6">
-              <a href="calculator" className="text-white hover:text-emerald-200">Calculator</a>
-              <a href="about" className="text-white hover:text-emerald-200">About Us</a>
-              <a href="methodology" className="text-white hover:text-emerald-200">Methodology</a>
+              <a href="/calculator" className="text-white hover:text-emerald-200">Calculator</a>
+              <a href="/authors" className="text-white hover:text-emerald-200">About Us</a>
+              <a href="/methodology" className="text-white hover:text-emerald-200">Methodology</a>
             </nav>
           </div>
         </div>
@@ -143,9 +142,9 @@ const IncomeCalculator = () => {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <h1 className="text-white text-xl font-bold">The Lottery of Life</h1>
           <nav className="flex gap-6">
-            <a href="#calculator" className="text-white hover:text-emerald-200">Calculator</a>
-            <a href="#about" className="text-white hover:text-emerald-200">About Us</a>
-            <a href="#methodology" className="text-white hover:text-emerald-200">Methodology</a>
+            <a href="calculator" className="text-white hover:text-emerald-200">Calculator</a>
+            <a href="about" className="text-white hover:text-emerald-200">About Us</a>
+            <a href="methodology" className="text-white hover:text-emerald-200">Methodology</a>
           </nav>
         </div>
       </div>
@@ -173,6 +172,7 @@ const IncomeCalculator = () => {
         />
       </div>
     </div>
+    
   );
 };
 
