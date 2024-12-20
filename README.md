@@ -2,6 +2,9 @@
 
 # The Lottery of Life: Global Income Inequality Explorer
 
+## Live Website: https://inequalitycalculator.vercel.app/authors 
+<img width="944" alt="Screenshot 2024-12-20 at 15 10 18" src="https://github.com/user-attachments/assets/a11c3094-df3b-4a6c-9249-39a3b2a8dbc4" />
+
 ## Project Overview
 
 The Lottery of Life is an interactive web application that explores global income inequality by allowing users to experience how factors like country, gender, age, and education impact economic opportunities.
