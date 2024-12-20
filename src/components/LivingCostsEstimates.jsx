@@ -44,7 +44,7 @@ const LivingCostsEstimate = ({ country, totalIncome }) => {
     <div className="bg-white rounded-lg shadow-lg mt-6 p-6">
       {/* Updated Header Section */}
       <div className="mb-6">
-        <h2 className="text-xl font-bold flex items-center gap-2 mb-2">
+        <h2 className="text-emerald-700 font-bold flex items-center gap-2 mb-2">
           <Users className="h-6 w-6" />
           Living Costs Estimate
         </h2>
